@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.55.0" timestamp="2024-05-06T17:17:12.224">
-<file name="/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-core/src/main/java/com/sismics/docs/core/dao/GroupDao.java">
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.55.0" timestamp="2024-05-06T17:42:14.370">
+<file name="D:\COURSE\SE\lab\lab11\Teedy\docs-core\src\main\java\com\sismics\docs\core\dao\GroupDao.java">
 <violation beginline="162" endline="223" begincolumn="12" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="com.sismics.docs.core.dao" class="GroupDao" method="findByCriteria" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
 The method 'findByCriteria(GroupCriteria, SortCriteria)' has a cyclomatic complexity of 11.
 </violation>
 </file>
-<file name="/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-core/src/main/java/com/sismics/docs/core/service/InboxService.java">
+<file name="D:\COURSE\SE\lab\lab11\Teedy\docs-core\src\main\java\com\sismics\docs\core\service\InboxService.java">
 <violation beginline="195" endline="271" begincolumn="13" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="com.sismics.docs.core.service" class="InboxService" method="importMessage" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
 The method 'importMessage(Message, Map)' has a cyclomatic complexity of 12.
 </violation>
 </file>
-<file name="/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-core/src/main/java/com/sismics/docs/core/util/DirectoryUtil.java">
+<file name="D:\COURSE\SE\lab\lab11\Teedy\docs-core\src\main\java\com\sismics\docs\core\util\DirectoryUtil.java">
 <violation beginline="23" endline="51" begincolumn="19" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="com.sismics.docs.core.util" class="DirectoryUtil" method="getBaseDataDirectory" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
 The method 'getBaseDataDirectory()' has a cyclomatic complexity of 10.
 </violation>
 </file>
-<file name="/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-core/src/main/java/com/sismics/docs/core/util/FileUtil.java">
+<file name="D:\COURSE\SE\lab\lab11\Teedy\docs-core\src\main\java\com\sismics\docs\core\util\FileUtil.java">
 <violation beginline="1" endline="243" begincolumn="1" endcolumn="3" rule="ExcessiveImports" ruleset="Design" package="com.sismics.docs.core.util" class="FileUtil" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#excessiveimports" priority="3">
 A high number of imports can indicate a high degree of coupling within an object.
 </violation>
@@ -23,7 +23,7 @@ A high number of imports can indicate a high degree of coupling within an object
 The method 'createFile(String, String, Path, long, String, String, String)' has a cyclomatic complexity of 15.
 </violation>
 </file>
-<file name="/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-core/src/main/java/com/sismics/docs/core/util/MetadataUtil.java">
+<file name="D:\COURSE\SE\lab\lab11\Teedy\docs-core\src\main\java\com\sismics\docs\core\util\MetadataUtil.java">
 <violation beginline="33" endline="84" begincolumn="19" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="com.sismics.docs.core.util" class="MetadataUtil" method="updateMetadata" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
 The method 'updateMetadata(String, List, List)' has a cyclomatic complexity of 14.
 </violation>
@@ -34,17 +34,17 @@ The method 'validateValue(MetadataType, String)' has a cyclomatic complexity of 
 The method 'addMetadata(JsonObjectBuilder, String)' has a cyclomatic complexity of 10.
 </violation>
 </file>
-<file name="/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-core/src/main/java/com/sismics/docs/core/util/PdfUtil.java">
+<file name="D:\COURSE\SE\lab\lab11\Teedy\docs-core\src\main\java\com\sismics\docs\core\util\PdfUtil.java">
 <violation beginline="52" endline="119" begincolumn="19" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="com.sismics.docs.core.util" class="PdfUtil" method="convertToPdf" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
 The method 'convertToPdf(DocumentDto, List, boolean, boolean, int, OutputStream)' has a cyclomatic complexity of 12.
 </violation>
 </file>
-<file name="/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-core/src/main/java/com/sismics/docs/core/util/TransactionUtil.java">
+<file name="D:\COURSE\SE\lab\lab11\Teedy\docs-core\src\main\java\com\sismics\docs\core\util\TransactionUtil.java">
 <violation beginline="27" endline="86" begincolumn="19" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="com.sismics.docs.core.util" class="TransactionUtil" method="handle" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
 The method 'handle(Runnable)' has a cyclomatic complexity of 13.
 </violation>
 </file>
-<file name="/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-core/src/main/java/com/sismics/docs/core/util/indexing/LuceneIndexingHandler.java">
+<file name="D:\COURSE\SE\lab\lab11\Teedy\docs-core\src\main\java\com\sismics\docs\core\util\indexing\LuceneIndexingHandler.java">
 <violation beginline="1" endline="620" begincolumn="1" endcolumn="3" rule="ExcessiveImports" ruleset="Design" package="com.sismics.docs.core.util.indexing" class="LuceneIndexingHandler" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#excessiveimports" priority="3">
 A high number of imports can indicate a high degree of coupling within an object.
 </violation>
@@ -58,7 +58,7 @@ The method 'findByCriteria(PaginatedList, List, DocumentCriteria, SortCriteria)'
 The method 'getDocumentFromDocument(Document)' has a cyclomatic complexity of 10.
 </violation>
 </file>
-<file name="/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-core/src/main/java/com/sismics/util/EmailUtil.java">
+<file name="D:\COURSE\SE\lab\lab11\Teedy\docs-core\src\main\java\com\sismics\util\EmailUtil.java">
 <violation beginline="1" endline="292" begincolumn="1" endcolumn="3" rule="ExcessiveImports" ruleset="Design" package="com.sismics.util" class="EmailUtil" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#excessiveimports" priority="3">
 A high number of imports can indicate a high degree of coupling within an object.
 </violation>
@@ -69,22 +69,22 @@ The method 'sendEmail(String, UserDto, String, Map)' has a cyclomatic complexity
 The method 'parseMailContent(Part, MailContent)' has a cyclomatic complexity of 10.
 </violation>
 </file>
-<file name="/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-core/src/main/java/com/sismics/util/ResourceUtil.java">
+<file name="D:\COURSE\SE\lab\lab11\Teedy\docs-core\src\main\java\com\sismics\util\ResourceUtil.java">
 <violation beginline="34" endline="89" begincolumn="19" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="com.sismics.util" class="ResourceUtil" method="list" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
 The method 'list(Class, String, FilenameFilter)' has a cyclomatic complexity of 14.
 </violation>
 </file>
-<file name="/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-core/src/main/java/com/sismics/util/jpa/DbOpenHelper.java">
+<file name="D:\COURSE\SE\lab\lab11\Teedy\docs-core\src\main\java\com\sismics\util\jpa\DbOpenHelper.java">
 <violation beginline="56" endline="125" begincolumn="12" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="com.sismics.util.jpa" class="DbOpenHelper" method="open" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
 The method 'open()' has a cyclomatic complexity of 11.
 </violation>
 </file>
-<file name="/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-core/src/main/java/com/sismics/util/log4j/MemoryAppender.java">
+<file name="D:\COURSE\SE\lab\lab11\Teedy\docs-core\src\main\java\com\sismics\util\log4j\MemoryAppender.java">
 <violation beginline="101" endline="128" begincolumn="12" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="com.sismics.util.log4j" class="MemoryAppender" method="find" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
 The method 'find(LogCriteria, PaginatedList)' has a cyclomatic complexity of 10.
 </violation>
 </file>
-<file name="/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-core/src/main/java/com/sismics/util/mime/MimeTypeUtil.java">
+<file name="D:\COURSE\SE\lab\lab11\Teedy\docs-core\src\main\java\com\sismics\util\mime\MimeTypeUtil.java">
 <violation beginline="42" endline="69" begincolumn="19" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="com.sismics.util.mime" class="MimeTypeUtil" method="getFileExtension" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
 The method 'getFileExtension(String)' has a cyclomatic complexity of 12.
 </violation>
