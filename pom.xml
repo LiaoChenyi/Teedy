@@ -128,7 +128,7 @@
           <!-- printFailingErrors is pretty useful -->
           <printFailingErrors>true</printFailingErrors>
           <rulesets>
-            <ruleset>/home/eki/soft_eng/practice-answer.xml</ruleset>
+            <ruleset>/mnt/d/COURSE/SE/lab/lab11/Teedy/practice-answer.xml</ruleset>
           </rulesets>
         </configuration>
         <executions>
