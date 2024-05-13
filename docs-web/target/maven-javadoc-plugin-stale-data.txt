@@ -1,0 +1,184 @@
+@options
+@packages
+-classpath
+'/home/eki/.m2/repository/com/sismics/docs/docs-core/1.10/docs-core-1.10.jar:/home/eki/.m2/repository/org/hibernate/hibernate-core/5.4.27.Final/hibernate-core-5.4.27.Final.jar:/home/eki/.m2/repository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar:/home/eki/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/home/eki/.m2/repository/net/bytebuddy/byte-buddy/1.10.17/byte-buddy-1.10.17.jar:/home/eki/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/eki/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/home/eki/.m2/repository/org/jboss/jandex/2.1.3.Final/jandex-2.1.3.Final.jar:/home/eki/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/eki/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/eki/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:/home/eki/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/home/eki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/home/eki/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/home/eki/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/home/eki/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/home/eki/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/home/eki/.m2/repository/org/hibernate/hibernate-entitymanager/5.4.27.Final/hibernate-entitymanager-5.4.27.Final.jar:/home/eki/.m2/repository/org/hibernate/hibernate-c3p0/5.4.27.Final/hibernate-c3p0-5.4.27.Final.jar:/home/eki/.m2/repository/com/mchange/c3p0/0.9.5.5/c3p0-0.9.5.5.jar:/home/eki/.m2/repository/com/mchange/mchange-commons-java/0.2.19/mchange-commons-java-0.2.19.jar:/home/eki/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/home/eki/.m2/repository/org/apache/commons/commons-email/1.5/commons-email-1.5.jar:/home/eki/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/home/eki/.m2/repository/org/glassfish/javax.json/1.1.4/javax.json-1.1.4.jar:/home/eki/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/home/eki/.m2/repository/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.jar:/home/eki/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/home/eki/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/home/eki/.m2/repository/at/favre/lib/bcrypt/0.9.0/bcrypt-0.9.0.jar:/home/eki/.m2/repository/at/favre/lib/bytes/1.3.0/bytes-1.3.0.jar:/home/eki/.m2/repository/org/apache/lucene/lucene-core/8.7.0/lucene-core-8.7.0.jar:/home/eki/.m2/repository/org/apache/lucene/lucene-analyzers-common/8.7.0/lucene-analyzers-common-8.7.0.jar:/home/eki/.m2/repository/org/apache/lucene/lucene-queryparser/8.7.0/lucene-queryparser-8.7.0.jar:/home/eki/.m2/repository/org/apache/lucene/lucene-queries/8.7.0/lucene-queries-8.7.0.jar:/home/eki/.m2/repository/org/apache/lucene/lucene-sandbox/8.7.0/lucene-sandbox-8.7.0.jar:/home/eki/.m2/repository/org/apache/lucene/lucene-suggest/8.7.0/lucene-suggest-8.7.0.jar:/home/eki/.m2/repository/org/apache/lucene/lucene-highlighter/8.7.0/lucene-highlighter-8.7.0.jar:/home/eki/.m2/repository/org/apache/lucene/lucene-memory/8.7.0/lucene-memory-8.7.0.jar:/home/eki/.m2/repository/com/sun/mail/javax.mail/1.6.2/javax.mail-1.6.2.jar:/home/eki/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/home/eki/.m2/repository/com/squareup/okhttp3/okhttp/4.9.0/okhttp-4.9.0.jar:/home/eki/.m2/repository/com/squareup/okio/okio/2.8.0/okio-2.8.0.jar:/home/eki/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.4.0/kotlin-stdlib-common-1.4.0.jar:/home/eki/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.4.10/kotlin-stdlib-1.4.10.jar:/home/eki/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/home/eki/.m2/repository/org/apache/directory/api/api-all/2.0.1/api-all-2.0.1.jar:/home/eki/.m2/repository/org/apache/servicemix/bundles/org.apache.servicemix.bundles.xpp3/1.1.4c_7/org.apache.servicemix.bundles.xpp3-1.1.4c_7.jar:/home/eki/.m2/repository/org/apache/servicemix/bundles/org.apache.servicemix.bundles.dom4j/2.1.1_1/org.apache.servicemix.bundles.dom4j-2.1.1_1.jar:/home/eki/.m2/repository/org/apache/commons/commons-pool2/2.8.0/commons-pool2-2.8.0.jar:/home/eki/.m2/repository/org/apache/mina/mina-core/2.1.3/mina-core-2.1.3.jar:/home/eki/.m2/repository/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar:/home/eki/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/home/eki/.m2/repository/org/apache/servicemix/bundles/org.apache.servicemix.bundles.antlr/2.7.7_5/org.apache.servicemix.bundles.antlr-2.7.7_5.jar:/home/eki/.m2/repository/commons-codec/commons-codec/1.14/commons-codec-1.14.jar:/home/eki/.m2/repository/org/apache/lucene/lucene-backward-codecs/8.7.0/lucene-backward-codecs-8.7.0.jar:/home/eki/.m2/repository/org/imgscalr/imgscalr-lib/4.2/imgscalr-lib-4.2.jar:/home/eki/.m2/repository/org/apache/pdfbox/pdfbox/2.0.22/pdfbox-2.0.22.jar:/home/eki/.m2/repository/org/apache/pdfbox/fontbox/2.0.22/fontbox-2.0.22.jar:/home/eki/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.68/bcprov-jdk15on-1.68.jar:/home/eki/.m2/repository/fr/opensagres/xdocreport/fr.opensagres.odfdom.converter.pdf/2.0.2/fr.opensagres.odfdom.converter.pdf-2.0.2.jar:/home/eki/.m2/repository/fr/opensagres/xdocreport/fr.opensagres.odfdom.converter.core/2.0.2/fr.opensagres.odfdom.converter.core-2.0.2.jar:/home/eki/.m2/repository/org/odftoolkit/odfdom-java/0.8.7/odfdom-java-0.8.7.jar:/home/eki/.m2/repository/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.jar:/home/eki/.m2/repository/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar:/home/eki/.m2/repository/fr/opensagres/xdocreport/fr.opensagres.xdocreport.itext.extension/2.0.2/fr.opensagres.xdocreport.itext.extension-2.0.2.jar:/home/eki/.m2/repository/com/lowagie/itext/2.1.7/itext-2.1.7.jar:/home/eki/.m2/repository/fr/opensagres/xdocreport/fr.opensagres.poi.xwpf.converter.pdf/2.0.2/fr.opensagres.poi.xwpf.converter.pdf-2.0.2.jar:/home/eki/.m2/repository/fr/opensagres/xdocreport/fr.opensagres.poi.xwpf.converter.core/2.0.2/fr.opensagres.poi.xwpf.converter.core-2.0.2.jar:/home/eki/.m2/repository/org/apache/poi/poi-ooxml/4.0.1/poi-ooxml-4.0.1.jar:/home/eki/.m2/repository/org/apache/poi/poi/4.0.1/poi-4.0.1.jar:/home/eki/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/home/eki/.m2/repository/com/github/virtuald/curvesapi/1.05/curvesapi-1.05.jar:/home/eki/.m2/repository/org/apache/poi/ooxml-schemas/1.4/ooxml-schemas-1.4.jar:/home/eki/.m2/repository/org/apache/xmlbeans/xmlbeans/3.0.1/xmlbeans-3.0.1.jar:/home/eki/.m2/repository/com/twelvemonkeys/imageio/imageio-jpeg/3.6.2/imageio-jpeg-3.6.2.jar:/home/eki/.m2/repository/com/twelvemonkeys/imageio/imageio-core/3.6.2/imageio-core-3.6.2.jar:/home/eki/.m2/repository/com/twelvemonkeys/imageio/imageio-metadata/3.6.2/imageio-metadata-3.6.2.jar:/home/eki/.m2/repository/com/twelvemonkeys/imageio/imageio-tiff/3.6.2/imageio-tiff-3.6.2.jar:/home/eki/.m2/repository/com/github/jai-imageio/jai-imageio-jpeg2000/1.4.0/jai-imageio-jpeg2000-1.4.0.jar:/home/eki/.m2/repository/com/github/jai-imageio/jai-imageio-core/1.4.0/jai-imageio-core-1.4.0.jar:/home/eki/.m2/repository/com/levigo/jbig2/levigo-jbig2-imageio/2.0/levigo-jbig2-imageio-2.0.jar:/home/eki/.m2/repository/org/postgresql/postgresql/42.2.18/postgresql-42.2.18.jar:/home/eki/.m2/repository/javax/xml/bind/jaxb-api/2.3.0/jaxb-api-2.3.0.jar:/home/eki/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0/jaxb-core-2.3.0.jar:/home/eki/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-impl-2.3.0.jar:/home/eki/.m2/repository/com/sismics/docs/docs-web-common/1.10/docs-web-common-1.10.jar:/home/eki/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar:/home/eki/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet/2.33/jersey-container-servlet-2.33.jar:/home/eki/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.33/jersey-container-servlet-core-2.33.jar:/home/eki/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/home/eki/.m2/repository/org/glassfish/jersey/core/jersey-common/2.33/jersey-common-2.33.jar:/home/eki/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/home/eki/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/home/eki/.m2/repository/org/glassfish/jersey/core/jersey-server/2.33/jersey-server-2.33.jar:/home/eki/.m2/repository/org/glassfish/jersey/core/jersey-client/2.33/jersey-client-2.33.jar:/home/eki/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/home/eki/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/home/eki/.m2/repository/org/glassfish/jersey/media/jersey-media-json-processing/2.33/jersey-media-json-processing-2.33.jar:/home/eki/.m2/repository/org/glassfish/jakarta.json/1.1.6/jakarta.json-1.1.6.jar:/home/eki/.m2/repository/org/glassfish/jsonp-jaxrs/1.1.6/jsonp-jaxrs-1.1.6.jar:/home/eki/.m2/repository/org/glassfish/jersey/media/jersey-media-multipart/2.33/jersey-media-multipart-2.33.jar:/home/eki/.m2/repository/org/jvnet/mimepull/mimepull/1.9.13/mimepull-1.9.13.jar:/home/eki/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.33/jersey-hk2-2.33.jar:/home/eki/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/home/eki/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/home/eki/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/home/eki/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/home/eki/.m2/repository/org/javassist/javassist/3.25.0-GA/javassist-3.25.0-GA.jar:/home/eki/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/home/eki/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/home/eki/.m2/repository/com/google/guava/guava/30.1-jre/guava-30.1-jre.jar:/home/eki/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/eki/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/eki/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/eki/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/home/eki/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/home/eki/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/eki/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/eki/.m2/repository/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar:/home/eki/.m2/repository/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar:/home/eki/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar:/home/eki/.m2/repository/joda-time/joda-time/2.10.9/joda-time-2.10.9.jar:/home/eki/.m2/repository/com/h2database/h2/1.4.199/h2-1.4.199.jar:/home/eki/.m2/repository/com/twelvemonkeys/servlet/servlet/3.6.2/servlet-3.6.2.jar:/home/eki/.m2/repository/com/twelvemonkeys/common/common-lang/3.6.2/common-lang-3.6.2.jar:/home/eki/.m2/repository/com/twelvemonkeys/common/common-io/3.6.2/common-io-3.6.2.jar:/home/eki/.m2/repository/com/twelvemonkeys/common/common-image/3.6.2/common-image-3.6.2.jar:/home/eki/.m2/repository/commons-logging/commons-logging/1.1/commons-logging-1.1.jar:/home/eki/.m2/repository/logkit/logkit/1.0.1/logkit-1.0.1.jar:/home/eki/.m2/repository/avalon-framework/avalon-framework/4.1.3/avalon-framework-4.1.3.jar:/home/eki/.m2/repository/javax/servlet/servlet-api/2.3/servlet-api-2.3.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'11'
+-sourcepath
+'/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Docs Web 1.10 API'
+-linkoffline
+'https://docs.oracle.com/en/java/javase/11/docs/api' '/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'Docs Web 1.10 API'
+com.sismics.docs.rest.constant
+com.sismics.docs.rest.resource
+/home/eki/.m2/repository/com/sismics/docs/docs-core/1.10/docs-core-1.10.jar = 1714986663434
+/home/eki/.m2/repository/org/hibernate/hibernate-core/5.4.27.Final/hibernate-core-5.4.27.Final.jar = 1708939975755
+/home/eki/.m2/repository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar = 1708939970388
+/home/eki/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar = 1708939970831
+/home/eki/.m2/repository/net/bytebuddy/byte-buddy/1.10.17/byte-buddy-1.10.17.jar = 1708939972731
+/home/eki/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar = 1708939971926
+/home/eki/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar = 1708939971410
+/home/eki/.m2/repository/org/jboss/jandex/2.1.3.Final/jandex-2.1.3.Final.jar = 1708939972469
+/home/eki/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar = 1708939972116
+/home/eki/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar = 1708939972516
+/home/eki/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar = 1708939972987
+/home/eki/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar = 1708939973163
+/home/eki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar = 1708939974689
+/home/eki/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar = 1708939973266
+/home/eki/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar = 1708939973512
+/home/eki/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar = 1708939973741
+/home/eki/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar = 1708939974106
+/home/eki/.m2/repository/org/hibernate/hibernate-entitymanager/5.4.27.Final/hibernate-entitymanager-5.4.27.Final.jar = 1708939974021
+/home/eki/.m2/repository/org/hibernate/hibernate-c3p0/5.4.27.Final/hibernate-c3p0-5.4.27.Final.jar = 1708939974266
+/home/eki/.m2/repository/com/mchange/c3p0/0.9.5.5/c3p0-0.9.5.5.jar = 1708939974774
+/home/eki/.m2/repository/com/mchange/mchange-commons-java/0.2.19/mchange-commons-java-0.2.19.jar = 1708939975238
+/home/eki/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar = 1708939977015
+/home/eki/.m2/repository/org/apache/commons/commons-email/1.5/commons-email-1.5.jar = 1708939976913
+/home/eki/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar = 1708939983117
+/home/eki/.m2/repository/org/glassfish/javax.json/1.1.4/javax.json-1.1.4.jar = 1708939977676
+/home/eki/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar = 1708939977613
+/home/eki/.m2/repository/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.jar = 1708939983314
+/home/eki/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar = 1708939983551
+/home/eki/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar = 1708939983591
+/home/eki/.m2/repository/at/favre/lib/bcrypt/0.9.0/bcrypt-0.9.0.jar = 1708939983616
+/home/eki/.m2/repository/at/favre/lib/bytes/1.3.0/bytes-1.3.0.jar = 1708939983764
+/home/eki/.m2/repository/org/apache/lucene/lucene-core/8.7.0/lucene-core-8.7.0.jar = 1708939985495
+/home/eki/.m2/repository/org/apache/lucene/lucene-analyzers-common/8.7.0/lucene-analyzers-common-8.7.0.jar = 1708939997421
+/home/eki/.m2/repository/org/apache/lucene/lucene-queryparser/8.7.0/lucene-queryparser-8.7.0.jar = 1708939984379
+/home/eki/.m2/repository/org/apache/lucene/lucene-queries/8.7.0/lucene-queries-8.7.0.jar = 1708939984268
+/home/eki/.m2/repository/org/apache/lucene/lucene-sandbox/8.7.0/lucene-sandbox-8.7.0.jar = 1708939984485
+/home/eki/.m2/repository/org/apache/lucene/lucene-suggest/8.7.0/lucene-suggest-8.7.0.jar = 1708939984839
+/home/eki/.m2/repository/org/apache/lucene/lucene-highlighter/8.7.0/lucene-highlighter-8.7.0.jar = 1708939985022
+/home/eki/.m2/repository/org/apache/lucene/lucene-memory/8.7.0/lucene-memory-8.7.0.jar = 1708939985016
+/home/eki/.m2/repository/com/sun/mail/javax.mail/1.6.2/javax.mail-1.6.2.jar = 1708939985627
+/home/eki/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar = 1708939985566
+/home/eki/.m2/repository/com/squareup/okhttp3/okhttp/4.9.0/okhttp-4.9.0.jar = 1708939986063
+/home/eki/.m2/repository/com/squareup/okio/okio/2.8.0/okio-2.8.0.jar = 1708939986069
+/home/eki/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.4.0/kotlin-stdlib-common-1.4.0.jar = 1708939986197
+/home/eki/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.4.10/kotlin-stdlib-1.4.10.jar = 1708939986722
+/home/eki/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar = 1708939986566
+/home/eki/.m2/repository/org/apache/directory/api/api-all/2.0.1/api-all-2.0.1.jar = 1708939997780
+/home/eki/.m2/repository/org/apache/servicemix/bundles/org.apache.servicemix.bundles.xpp3/1.1.4c_7/org.apache.servicemix.bundles.xpp3-1.1.4c_7.jar = 1708939986799
+/home/eki/.m2/repository/org/apache/servicemix/bundles/org.apache.servicemix.bundles.dom4j/2.1.1_1/org.apache.servicemix.bundles.dom4j-2.1.1_1.jar = 1708939998208
+/home/eki/.m2/repository/org/apache/commons/commons-pool2/2.8.0/commons-pool2-2.8.0.jar = 1708939998654
+/home/eki/.m2/repository/org/apache/mina/mina-core/2.1.3/mina-core-2.1.3.jar = 1708939997867
+/home/eki/.m2/repository/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar = 1708939998557
+/home/eki/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar = 1708939998704
+/home/eki/.m2/repository/org/apache/servicemix/bundles/org.apache.servicemix.bundles.antlr/2.7.7_5/org.apache.servicemix.bundles.antlr-2.7.7_5.jar = 1708939998544
+/home/eki/.m2/repository/commons-codec/commons-codec/1.14/commons-codec-1.14.jar = 1708939998921
+/home/eki/.m2/repository/org/apache/lucene/lucene-backward-codecs/8.7.0/lucene-backward-codecs-8.7.0.jar = 1708939999473
+/home/eki/.m2/repository/org/imgscalr/imgscalr-lib/4.2/imgscalr-lib-4.2.jar = 1708939999176
+/home/eki/.m2/repository/org/apache/pdfbox/pdfbox/2.0.22/pdfbox-2.0.22.jar = 1708940000506
+/home/eki/.m2/repository/org/apache/pdfbox/fontbox/2.0.22/fontbox-2.0.22.jar = 1708940000235
+/home/eki/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.68/bcprov-jdk15on-1.68.jar = 1708940010455
+/home/eki/.m2/repository/fr/opensagres/xdocreport/fr.opensagres.odfdom.converter.pdf/2.0.2/fr.opensagres.odfdom.converter.pdf-2.0.2.jar = 1708940000114
+/home/eki/.m2/repository/fr/opensagres/xdocreport/fr.opensagres.odfdom.converter.core/2.0.2/fr.opensagres.odfdom.converter.core-2.0.2.jar = 1708940000006
+/home/eki/.m2/repository/org/odftoolkit/odfdom-java/0.8.7/odfdom-java-0.8.7.jar = 1708940002674
+/home/eki/.m2/repository/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.jar = 1708940002214
+/home/eki/.m2/repository/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar = 1708940000883
+/home/eki/.m2/repository/fr/opensagres/xdocreport/fr.opensagres.xdocreport.itext.extension/2.0.2/fr.opensagres.xdocreport.itext.extension-2.0.2.jar = 1708940001052
+/home/eki/.m2/repository/com/lowagie/itext/2.1.7/itext-2.1.7.jar = 1708940002218
+/home/eki/.m2/repository/fr/opensagres/xdocreport/fr.opensagres.poi.xwpf.converter.pdf/2.0.2/fr.opensagres.poi.xwpf.converter.pdf-2.0.2.jar = 1708940001669
+/home/eki/.m2/repository/fr/opensagres/xdocreport/fr.opensagres.poi.xwpf.converter.core/2.0.2/fr.opensagres.poi.xwpf.converter.core-2.0.2.jar = 1708940002321
+/home/eki/.m2/repository/org/apache/poi/poi-ooxml/4.0.1/poi-ooxml-4.0.1.jar = 1708940004673
+/home/eki/.m2/repository/org/apache/poi/poi/4.0.1/poi-4.0.1.jar = 1708940005224
+/home/eki/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar = 1708940004029
+/home/eki/.m2/repository/com/github/virtuald/curvesapi/1.05/curvesapi-1.05.jar = 1708940003361
+/home/eki/.m2/repository/org/apache/poi/ooxml-schemas/1.4/ooxml-schemas-1.4.jar = 1708940013354
+/home/eki/.m2/repository/org/apache/xmlbeans/xmlbeans/3.0.1/xmlbeans-3.0.1.jar = 1708940006059
+/home/eki/.m2/repository/com/twelvemonkeys/imageio/imageio-jpeg/3.6.2/imageio-jpeg-3.6.2.jar = 1708940005266
+/home/eki/.m2/repository/com/twelvemonkeys/imageio/imageio-core/3.6.2/imageio-core-3.6.2.jar = 1708940005833
+/home/eki/.m2/repository/com/twelvemonkeys/imageio/imageio-metadata/3.6.2/imageio-metadata-3.6.2.jar = 1708940006525
+/home/eki/.m2/repository/com/twelvemonkeys/imageio/imageio-tiff/3.6.2/imageio-tiff-3.6.2.jar = 1708940007382
+/home/eki/.m2/repository/com/github/jai-imageio/jai-imageio-jpeg2000/1.4.0/jai-imageio-jpeg2000-1.4.0.jar = 1708940007984
+/home/eki/.m2/repository/com/github/jai-imageio/jai-imageio-core/1.4.0/jai-imageio-core-1.4.0.jar = 1708940008361
+/home/eki/.m2/repository/com/levigo/jbig2/levigo-jbig2-imageio/2.0/levigo-jbig2-imageio-2.0.jar = 1708940008215
+/home/eki/.m2/repository/org/postgresql/postgresql/42.2.18/postgresql-42.2.18.jar = 1708940009444
+/home/eki/.m2/repository/javax/xml/bind/jaxb-api/2.3.0/jaxb-api-2.3.0.jar = 1708940008805
+/home/eki/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0/jaxb-core-2.3.0.jar = 1708940008937
+/home/eki/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-impl-2.3.0.jar = 1708940009922
+/home/eki/.m2/repository/com/sismics/docs/docs-web-common/1.10/docs-web-common-1.10.jar = 1714986667780
+/home/eki/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar = 1708940232061
+/home/eki/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet/2.33/jersey-container-servlet-2.33.jar = 1708940230240
+/home/eki/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.33/jersey-container-servlet-core-2.33.jar = 1708940230276
+/home/eki/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar = 1708940230218
+/home/eki/.m2/repository/org/glassfish/jersey/core/jersey-common/2.33/jersey-common-2.33.jar = 1708940230987
+/home/eki/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar = 1708940230228
+/home/eki/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar = 1708940230789
+/home/eki/.m2/repository/org/glassfish/jersey/core/jersey-server/2.33/jersey-server-2.33.jar = 1708940231232
+/home/eki/.m2/repository/org/glassfish/jersey/core/jersey-client/2.33/jersey-client-2.33.jar = 1708940232702
+/home/eki/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar = 1708940230949
+/home/eki/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar = 1708940230986
+/home/eki/.m2/repository/org/glassfish/jersey/media/jersey-media-json-processing/2.33/jersey-media-json-processing-2.33.jar = 1708940231315
+/home/eki/.m2/repository/org/glassfish/jakarta.json/1.1.6/jakarta.json-1.1.6.jar = 1708940231529
+/home/eki/.m2/repository/org/glassfish/jsonp-jaxrs/1.1.6/jsonp-jaxrs-1.1.6.jar = 1708940231523
+/home/eki/.m2/repository/org/glassfish/jersey/media/jersey-media-multipart/2.33/jersey-media-multipart-2.33.jar = 1708940234684
+/home/eki/.m2/repository/org/jvnet/mimepull/mimepull/1.9.13/mimepull-1.9.13.jar = 1708940234692
+/home/eki/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.33/jersey-hk2-2.33.jar = 1708940289570
+/home/eki/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar = 1708940289583
+/home/eki/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar = 1708940289513
+/home/eki/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar = 1708940290869
+/home/eki/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar = 1708940289593
+/home/eki/.m2/repository/org/javassist/javassist/3.25.0-GA/javassist-3.25.0-GA.jar = 1708940290628
+/home/eki/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar = 1708939976922
+/home/eki/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar = 1708940231590
+/home/eki/.m2/repository/com/google/guava/guava/30.1-jre/guava-30.1-jre.jar = 1708939983087
+/home/eki/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar = 1708939975290
+/home/eki/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar = 1708939975759
+/home/eki/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar = 1708939975809
+/home/eki/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar = 1708939976407
+/home/eki/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar = 1708939976267
+/home/eki/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar = 1708939976308
+/home/eki/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar = 1708939983084
+/home/eki/.m2/repository/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar = 1708940231908
+/home/eki/.m2/repository/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar = 1708940231906
+/home/eki/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar = 1708940232084
+/home/eki/.m2/repository/joda-time/joda-time/2.10.9/joda-time-2.10.9.jar = 1708939976294
+/home/eki/.m2/repository/com/h2database/h2/1.4.199/h2-1.4.199.jar = 1708940011241
+/home/eki/.m2/repository/com/twelvemonkeys/servlet/servlet/3.6.2/servlet-3.6.2.jar = 1708940290231
+/home/eki/.m2/repository/com/twelvemonkeys/common/common-lang/3.6.2/common-lang-3.6.2.jar = 1708940006435
+/home/eki/.m2/repository/com/twelvemonkeys/common/common-io/3.6.2/common-io-3.6.2.jar = 1708940007006
+/home/eki/.m2/repository/com/twelvemonkeys/common/common-image/3.6.2/common-image-3.6.2.jar = 1708940007281
+/home/eki/.m2/repository/commons-logging/commons-logging/1.1/commons-logging-1.1.jar = 1708940234148
+/home/eki/.m2/repository/logkit/logkit/1.0.1/logkit-1.0.1.jar = 1708940234298
+/home/eki/.m2/repository/avalon-framework/avalon-framework/4.1.3/avalon-framework-4.1.3.jar = 1708940234356
+/home/eki/.m2/repository/javax/servlet/servlet-api/2.3/servlet-api-2.3.jar = 1708940234426
+/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/src/main/java = 1714962253969
+/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/target/apidocs/allclasses-index.html = 1715564293440
+/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/target/apidocs/allclasses.html = 1715564293455
+/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/target/apidocs/allpackages-index.html = 1715564293444
+/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/target/apidocs/constant-values.html = 1715564293272
+/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/target/apidocs/deprecated-list.html = 1715564293451
+/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/target/apidocs/element-list = 1715564293245
+/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/target/apidocs/help-doc.html = 1715564293472
+/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/target/apidocs/index-all.html = 1715564293430
+/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/target/apidocs/index.html = 1715564293466
+/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/target/apidocs/jquery-ui.overrides.css = 1715564293503
+/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/target/apidocs/member-search-index.js = 1715564293425
+/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/target/apidocs/member-search-index.zip = 1715564293427
+/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/target/apidocs/overview-summary.html = 1715564293468
+/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/target/apidocs/overview-tree.html = 1715564293367
+/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/target/apidocs/package-search-index.js = 1715564293420
+/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/target/apidocs/package-search-index.zip = 1715564293422
+/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/target/apidocs/script.js = 1715564293476
+/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/target/apidocs/search.js = 1715564293478
+/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/target/apidocs/stylesheet.css = 1715564293474
+/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/target/apidocs/type-search-index.js = 1715564293423
+/mnt/d/COURSE/SE/lab/lab11/Teedy/docs-web/target/apidocs/type-search-index.zip = 1715564293424

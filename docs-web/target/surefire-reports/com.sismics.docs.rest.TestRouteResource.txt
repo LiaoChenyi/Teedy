@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.sismics.docs.rest.TestRouteResource
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.978 s <<< FAILURE! - in com.sismics.docs.rest.TestRouteResource
+com.sismics.docs.rest.TestRouteResource.testRouteResource  Time elapsed: 1.96 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.sismics.docs.rest.TestRouteResource.testRouteResource(TestRouteResource.java:76)
+

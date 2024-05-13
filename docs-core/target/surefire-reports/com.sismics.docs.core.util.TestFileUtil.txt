@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.sismics.docs.core.util.TestFileUtil
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 19.32 s <<< FAILURE! - in com.sismics.docs.core.util.TestFileUtil
+com.sismics.docs.core.util.TestFileUtil.extractContentScannedPdf  Time elapsed: 1.996 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.sismics.docs.core.util.TestFileUtil.extractContentScannedPdf(TestFileUtil.java:74)
+
