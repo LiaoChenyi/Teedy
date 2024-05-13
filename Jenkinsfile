@@ -10,7 +10,7 @@ pipeline {
 
         stage('Doc') {
             steps {
-                sh 'mvn -X javadoc:jar -e'
+                sh 'mvn javadoc:javadoc'
                 sh 'mvn surefire-report:report'
             }
         }
