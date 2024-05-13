@@ -161,13 +161,12 @@
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>3.6.3</version>
         <executions>
-          <execution>
-            <id>aggregate</id>
-            <goals>
-              <goal>aggregate</goal>
-            </goals>
-            <phase>site</phase>
-          </execution>
+         <execution>
+           <id>attach-javadocs</id>
+           <goals>
+             <goal>jar</goal>
+           </goals>
+         </execution>
         </executions>
       </plugin>
 
