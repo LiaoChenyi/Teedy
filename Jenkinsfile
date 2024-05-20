@@ -12,7 +12,7 @@ pipeline {
             stage('Building image') {
                 steps{
                 //your command
-                sh 'docker run -d -p 8084:8080 --name teedy_manual01 teedy2024_manual'
+                sh 'docker build -t teedy2024_manual .'
                 }
             }
             // Uploading Docker images into Docker Hub
