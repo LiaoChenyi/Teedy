@@ -1,39 +1,35 @@
 pipeline {
     agent any
-    
-    stages {
-        stage('Build') {
+    stages{
+        stage('Package') {
             steps {
+                checkout scmGit(branches: [[name: '*/master']], extensions: [],
+                userRemoteConfigs: [[url: 'https://github.com/traccytian/Teedy_2024.git']])
                 sh 'mvn -B -DskipTests clean package'
+                }
             }
-        }
-
-        stage('Doc') {
-            steps {
-                sh 'mvn javadoc:jar --fail-never'
-                sh 'mvn surefire-report:report --fail-never'
+            // Building Docker images
+            stage('Building image') {
+                steps{
+                //your command
+                sh 'sudo docker run -d -p 8084:8080 --name teedy_manual01 teedy2024_manual'
+                }
             }
-        }
-
-        stage('pmd') {
-            steps {
-                sh 'mvn pmd:pmd'
+            // Uploading Docker images into Docker Hub
+            stage('Upload image') {
+                steps{
+                //your command
+                sh 'sudo docker push seveneki/teedy:teedy2024_manual'
+                }
             }
-        }
-        
-        stage('Test report') {
-            steps {
-                sh 'mvn test --fail-never'
-            }
-        }
-        
-    }
-    
-    post {
-        always {
-            archiveArtifacts artifacts: '**/target/site/**', fingerprint: true
-            archiveArtifacts artifacts: '**/target/**/*.jar', fingerprint: true
-            archiveArtifacts artifacts: '**/target/**/*.war', fingerprint: true
+            //Running Docker container
+            stage('Run containers'){
+                steps{
+                //your command
+                sh 'sudo docker run -d -p 8084:8080 --name teedy_manual01 teedy2024_manual'
+                sh 'sudo docker run -d -p 8082:8080 --name teedy_manual02 teedy2024_manual'
+                sh 'sudo docker run -d -p 8083:8080 --name teedy_manual03 teedy2024_manual'
+                }
         }
     }
 }

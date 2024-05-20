@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.sismics.util.TestMimeTypeUtil
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.108 s <<< FAILURE! - in com.sismics.util.TestMimeTypeUtil
-com.sismics.util.TestMimeTypeUtil.test  Time elapsed: 0.03 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[text/csv]> but was:<[application/vnd.ms-excel]>
-	at com.sismics.util.TestMimeTypeUtil.test(TestMimeTypeUtil.java:41)
-
