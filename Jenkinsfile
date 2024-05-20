@@ -12,23 +12,23 @@ pipeline {
             stage('Building image') {
                 steps{
                 //your command
-                sh 'sudo docker run -d -p 8084:8080 --name teedy_manual01 teedy2024_manual'
+                sh 'docker run -d -p 8084:8080 --name teedy_manual01 teedy2024_manual'
                 }
             }
             // Uploading Docker images into Docker Hub
             stage('Upload image') {
                 steps{
                 //your command
-                sh 'sudo docker push seveneki/teedy:teedy2024_manual'
+                sh 'docker push seveneki/teedy:teedy2024_manual'
                 }
             }
             //Running Docker container
             stage('Run containers'){
                 steps{
                 //your command
-                sh 'sudo docker run -d -p 8084:8080 --name teedy_manual01 teedy2024_manual'
-                sh 'sudo docker run -d -p 8082:8080 --name teedy_manual02 teedy2024_manual'
-                sh 'sudo docker run -d -p 8083:8080 --name teedy_manual03 teedy2024_manual'
+                sh 'docker run -d -p 8084:8080 --name teedy_manual01 teedy2024_manual'
+                sh 'docker run -d -p 8082:8080 --name teedy_manual02 teedy2024_manual'
+                sh 'docker run -d -p 8083:8080 --name teedy_manual03 teedy2024_manual'
                 }
         }
     }
