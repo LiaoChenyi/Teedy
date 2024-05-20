@@ -19,6 +19,8 @@ pipeline {
             stage('Upload image') {
                 steps{
                 //your command
+                sh 'docker login -u seveneki -p liao.20030105'
+                sh 'docker tag teedy2024_manual seveneki/teedy:teedy2024_manual'
                 sh 'docker push seveneki/teedy:teedy2024_manual'
                 }
             }
